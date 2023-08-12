@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nafie develops the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients.">
+    <meta name="keywords" content="portfolio, agency, business, clean, company, corporate, creative, gallery, rtl, modern, photography, vue, vuejs, responsive, sass">
+
+    <!-- title of the browser tab -->
+    <title>AN Apex</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&family=Saira+Stencil+One&text=Nafie&display=swap">
+
+    <!-- css libraries file -->
+    <link rel="stylesheet" href="styles/libraries.min.css">
+
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="styles/bootstrap.css">
+
+    <!-- main style file -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-inner" ref="appRef"
+        :class="[savedTheme, {'enable-focus-style': isAnyFocus}]"
+        @click="isAnyFocus = false"
+        @keyup.tab="isAnyFocus = true">
+
+        <div class="circle-cursor circle-cursor-outer" ref="circleCursorOuter"></div>
+        <div class="circle-cursor circle-cursor-inner" ref="circleCursorInner"></div>
+
+        <!-- start preloader-->
+       
+        <!-- end preloader-->
+
+        <!-- start of header -->
+        <header class="hide-in-preloading" :class="{
+          'big-header': isHeaderBig,
+          'small-header': !isHeaderBig,
+          'header-hidden': isHeaderHidden
+        }">
+          <div class="container">
+            <!-- logo -->
+            <div class="logo" title="AN Plus">
+              <h1><a href="index.html">AN Apex</a></h1>
+            </div>
+
+            <!-- nav links -->
+          
+
+              <!-- menu content in big devices (hidden in mobile/tablet) -->
+              
+              
+                  <!-- about us -->
+                  
+
+                  <!-- contact info -->
+                  
+
+            <!-- options icons -->
+            <ul class="options-icons">
+
+              <!-- lang switcher button -->
+              
+              <!-- theme switcher button -->
+              <li class="theme-switcher">
+                <button :class="savedTheme" title="Change Mode" @click="changeAppTheme"></button>
+              </li>
+
+              <!-- hamburger button -->
+              <li class="hamburger-btn" :class="{'open': isNavMenuOpen}">
+                <button @click="toggleNavMenu"
+                  title="Toggle Side Menu"
+                  aria-label="Toggle Side Menu"
+                  ref="navMenuToggleBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start of hero section -->
+        
+        <!-- end of hero section -->
+
+        <!-- start of statistics section -->
+        <div id="statistics" class="statistics-section section">
+          <div class="section-content">
+            <div class="container">
+              <ul class="statistics-items row">
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="https://lite.anjob.in">
+                    <div class="icon">
+                      <img src="assets/images/icons/job-min.png" alt="Jobs">
+                    </div>
+                    <div class="text">
+                      <h3>AN Job</h3>
+                      <strong>Job Vacancies</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="https://nodownload.org/media/page/renthouse">
+                    <div class="icon">
+                      <img src="assets/images/icons/home-min.png" alt="Rent House">
+                    </div>
+                    <div class="text">
+                      <h3>AN Home</h3>
+                      <strong>Rent Rooms</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="https://nodownload.org/media/page/anskillcraft">
+                    <div class="icon">
+                      <img src="assets/images/icons/video-min.png" alt="AN Play">
+                    </div>
+                    <div class="text">
+                      <h3>AN Play</h3>
+                      <strong>Informative Videos</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="https://nodownload.org/tools/">
+                    <div class="icon">
+                      <img src="assets/images/icons/app-min.png" alt="App Store">
+                    </div>
+                    <div class="text">
+                      <h3>AN Apps</h3>
+                      <strong>App Store</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="col-sm-12 col-md-6 col-lg-4">
+                  <a href="https://nodownload.org/media/page/anfeed">
+                    <div class="icon">
+                      <img src="assets/images/icons/feed-min.png" alt="AN Feed">
+                    </div>
+                    <div class="text">
+                      <h3>AN Feed</h3>
+                      <strong>Articles</strong>
+                    </div>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- start of about section -->
+        
+
+              <!-- about image -->
+             
+
+              <!-- text box -->
+             
+        <!-- end of about section -->
+
+        <!-- start of skills section -->
+        
+
+              <!-- text box -->
+              
+
+              <!-- skills items -->
+             
+                <!-- tools list -->
+                
+               
+        <!-- end of skills section -->
+
+        <!-- start of experience section -->
+       
+
+              <!-- timeline -->
+             
+              <!-- text box -->
+             
+             
+        <!-- end of experience section -->
+
+        <!-- start of portfolio section -->
+        
+
+              <!-- portfolio items -->
+            
+                  <!-- text box -->
+                 
+
+                <!-- start items list -->
+                
+                <!-- end items list -->
+
+               
+        <!-- end of portfolio section -->
+
+        <!-- start of testimonials section -->
+        
+        <!-- end of testimonials section -->
+
+        <!-- start of contact section -->
+        
+              <!-- text box -->
+              
+                <!-- contact info -->
+                
+                <!-- social links -->
+                
+             
+
+              <!-- contact form -->
+              
+
+                      <!-- validation errors messages -->
+                    
+                      <!-- validation errors messages -->
+                    
+
+                      <!-- validation errors messages -->
+                     
+                      <!-- validation errors messages -->
+                     
+        <!-- end of contact section -->
+
+        <!-- start of footer -->
+        
+        <!-- end of footer -->
+
+        <!-- scroll to top button -->
+        <button class="scroll-to-top" ref="scrollTopBtn"
+          title="Back To Top"
+          data-show-at="50"
+          @click="scrollToTop">
+          <svg width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+          </svg>
+        </button>
+
+        <!-- toast notifications -->
+        <ul class="notifications-container hide-in-preloading">
+          <transition-group name="notify">
+            <li v-for="notify of notifications"
+              :key="notify.id"
+              :id="notify.id"
+              :class="['notification', 'show', notify.className, notify.time && 'timer']"
+            >
+              {{ notify.msg }}
+              <i class="fa fa-times link-hover" aria-hidden="true" @click="dismissNotify(notify.id)"></i>
+              <span v-if="notify.time"
+                class="disappearing-time"
+                :style="{ 'animation-duration': notify.time + 'ms' }"></span>
+            </li>
+          </transition-group>
+        </ul>
+
+        <!-- ajax loading -->
+        <div class="ajax-loading hide-in-preloading" v-show="isAjaxLoading">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- js plugins file -->
+    <script src="scripts/plugins.min.js"></script>
+
+    <!-- main script file -->
+    <script src="scripts/main.min.js"></script>
+  </body>
+</html>
